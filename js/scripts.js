@@ -5,9 +5,9 @@ window.onload = function() {
   let form = document.querySelector("form");
   form.onsubmit = function(event) {
 
-  const sentenceInput = toUpperCase(document.getElementById("sentence").value);
+  const sentenceInput = document.getElementById("sentence").value;
   
-  document.querySelector("span#sentence").innerText = sentenceInput
+  document.querySelector("span#sentence").innerText = sentenceInput.toUpperCase();
   
   console.log("checked");
 
